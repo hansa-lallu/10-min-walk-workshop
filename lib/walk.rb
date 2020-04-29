@@ -1,5 +1,6 @@
 class Walk 
   def valid_walk(walk)
-    false
+    return false if walk.count('n') != walk.count('s')
+    return false if walk.length != 10 
   end
 end
